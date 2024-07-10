@@ -7,5 +7,11 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <% for(var message of messages) { %>
+      <p> <%= message.text %> </p> <br>
+      <p> <%= message.user %> </p> <br>
+      <p> <%= message.added %> </p> <br>
+      <% } %>
   </body>
 </html>
